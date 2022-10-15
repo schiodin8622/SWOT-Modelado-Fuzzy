@@ -10,5 +10,7 @@ python3 ProgPrinc.py
 Entrada: Csv de factores internos y externos de acuerdo al formato
 Salida: salida.csv con priorizaciones de la matriz FODA de acuerdo a la combinacion de Factores
 
+Licencia GPL 2.0
+
 Ing. Sebastián A. Chiodin
 Septiembre 2022
