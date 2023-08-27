@@ -166,14 +166,14 @@ plt.gca().plot_surface(xx, yy, z0, alpha=0.2)
 plt.gca().plot_surface(xx, yy, z1, alpha=0.2)
 plt.gca().plot_surface(xx, yy, z2, alpha=0.2)
  
-custom.set_xlabel('Factores Internos',fontsize=54,labelpad=40)
+custom.set_xlabel('Factores Internos',fontsize=12,labelpad=10)
 
-custom.set_ylabel('Factores Externos',fontsize=54,labelpad=40)
-custom.set_zlabel('Z',fontsize=54,labelpad=40)
-custom.zaxis.set_tick_params(labelsize=35,pad=20)
+custom.set_ylabel('Factores Externos',fontsize=12,labelpad=12)
+custom.set_zlabel('Z',fontsize=12,labelpad=12)
+custom.zaxis.set_tick_params(labelsize=10,pad=5)
 
-plt.xticks(fontsize=35)
-plt.yticks(fontsize=35)
+plt.xticks(fontsize=10)
+plt.yticks(fontsize=10)
 
 plt.show()
 
@@ -193,16 +193,16 @@ plt.show()
 
 plt.figure(2,figsize=(100,40))
 
-plt.xticks(fontsize=100)
+plt.xticks(fontsize=12)
 
-plt.yticks(fontsize=100)
+plt.yticks(fontsize=12)
 
 
 for tick in plt.gca().get_xaxis().get_major_ticks():
-    tick.set_pad(20.)
+    tick.set_pad(2.)
     
 for tick in plt.gca().get_yaxis().get_major_ticks():
-    tick.set_pad(40.0)
+    tick.set_pad(5.0)
     
 
 for i in range(len(alfa)):
@@ -243,12 +243,12 @@ for i in range(len(alfa)):
     #Dibujo el rectangulo con los vertices
     rectangulo = [[(xmin,ymin),(xmax,ymin),(xmax,ymax),(xmin,ymax)]]
     plt.gca().add_patch(Rectangle((xmin, ymin), delta_x, delta_y,alpha=0.23))
-    plt.gca().text(xmin - 0.1 , ymin + 0.35, r'$\alpha=$'+str(alfa[i]), fontsize=100)
+    plt.gca().text(xmin - 0.1 , ymin + 0.35, r'$\alpha=$'+str(alfa[i]), fontsize=12)
     #Diagramo los centros de masa
-    plt.gca().scatter(xcm,ycm,1000)
+    plt.gca().scatter(xcm,ycm,100)
     
-plt.gca().set_xlabel('Factores Internos',fontsize=100,labelpad=40)
-plt.gca().set_ylabel('Factores Externos',fontsize=100,labelpad=40)
+plt.gca().set_xlabel('Factores Internos',fontsize=12,labelpad=5)
+plt.gca().set_ylabel('Factores Externos',fontsize=12,labelpad=5)
 plt.xlim([5, 8])
 plt.ylim([5, 10])
 plt.show()   
